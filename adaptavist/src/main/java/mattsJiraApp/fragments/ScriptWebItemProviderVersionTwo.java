@@ -5,6 +5,7 @@ import com.atlassian.plugin.web.api.descriptors.WebItemProviderModuleDescriptor;
 import com.atlassian.plugin.web.api.provider.WebItemProvider;
 
 import javax.annotation.Nonnull;
+import java.util.Collections;
 import java.util.Map;
 
 import static java.util.Collections.singleton;
@@ -26,7 +27,10 @@ public class ScriptWebItemProviderVersionTwo implements WebItemProvider {
             @Nonnull
             @Override
             public String getSection() {
-                return moduleDescriptor.getSection();
+                if(moduleDescriptor != null) {
+                    return moduleDescriptor.getSection();
+                }
+                return "";
             }
 
             @Nonnull
@@ -73,9 +77,12 @@ public class ScriptWebItemProviderVersionTwo implements WebItemProvider {
             @Nonnull
             @Override
             public Map<String, String> getParams() {
-                var result = moduleDescriptor.getParams();
-                System.out.println("getParams: " + result);
-                return result;
+                if(moduleDescriptor != null) {
+                    var result = moduleDescriptor.getParams();
+                    System.out.println("getParams: " + result);
+                    return result;
+                }
+                return Collections.emptyMap();
             }
 
             @Override
