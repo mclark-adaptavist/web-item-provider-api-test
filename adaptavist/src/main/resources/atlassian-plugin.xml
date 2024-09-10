@@ -23,7 +23,11 @@
     <label>Test section</label>
   </web-section>
 
-  <web-item-provider key='my-item-provider' name='ScriptRunner web item provider - my-item-provider' section='find_link/active-issues' class='mattsJiraApp.fragments.ScriptWebItemProviderVersionTwo'>
+  <web-item-provider
+          key='my-item-provider'
+          name='ScriptRunner web item provider - my-item-provider'
+          section='find_link/active-issues'
+          class='mattsJiraApp.fragments.ScriptWebItemProviderVersionTwo'>
     <param name='providerClass' value='test' />
   </web-item-provider>
 
