@@ -19,16 +19,16 @@
     <context>adaptavist</context> 
   </web-resource>  
 
-  <web-section key='active-issues' name='ScriptRunner active-issues' location='find_link' weight='1'>
-    <label>Test section</label>
-  </web-section>
+<!--  <web-section key='active-issues' name='ScriptRunner active-issues' location='find_link' weight='1'>-->
+<!--    <label>Test section</label>-->
+<!--  </web-section>-->
 
-  <web-item-provider
-          key='my-item-provider'
-          name='ScriptRunner web item provider - my-item-provider'
-          section='find_link/active-issues'
-          class='mattsJiraApp.fragments.ScriptWebItemProviderVersionTwo'>
-    <param name='providerClass' value='test' />
-  </web-item-provider>
+<!--  <web-item-provider-->
+<!--          key='my-item-provider'-->
+<!--          name='ScriptRunner web item provider - my-item-provider'-->
+<!--          section='find_link/active-issues'-->
+<!--          class='mattsJiraApp.fragments.ScriptWebItemProviderVersionTwo'>-->
+<!--    <param name='providerClass' value='test' />-->
+<!--  </web-item-provider>-->
 
 </atlassian-plugin>
